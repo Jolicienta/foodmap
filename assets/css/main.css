@@ -1,6 +1,5 @@
 /*
-*Colores y fuentes usadas
-font-family: 'Barlow', sans-serif;
+Colores y fuentes usadas:
 font-family: 'Poppins', sans-serif;
 colores: #7BFC02; #442662;
 */
@@ -9,13 +8,16 @@ body {
   background-color: #442662;
 }
 
-body .logo h1 {
+.loading .logo h1 {
   font-family: 'Poppins', sans-serif;
   color: #7BFC02;
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 45%;
 }
 
+/*
+Efecto de cargado
+*/
 .loader:before,
 .loader:after,
 .loader {
@@ -68,4 +70,73 @@ body .logo h1 {
   40% {
     box-shadow: 0 2.5em 0 0 #7BFC02;
   }
+}
+
+ .primera .titulo h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #7BFC02;
+  margin-bottom: -10px;
+}
+
+hr.separador {
+  height: 30px;
+  border-style: solid;
+  border-color: #7BFC02;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.separador:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #7BFC02;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.primera #mapa {
+  height: 200px;
+  margin-top: -30px;
+}
+
+.btn {
+  border-radius: 0px;
+  color: #7BFC02;
+  background-color: #442662;
+  border-color: #7BFC02;
+  padding: 5px;
+}
+
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+  color: #fff;
+  background-color: #361f4d;
+  border-color: transparent;
+}
+
+.dropdown-menu {
+    position: relative;
+    padding: 0px 0;
+    margin: 0px 0 0;
+    text-align: center;
+    background-color: transparent;
+    font-size: 12px;
+    border: none;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.dropdown-menu>li {
+  color: #fff;
+  line-height: 2em;
+  border-bottom: 2px solid #361f4d;
+}
+
+.segunda #container img {
+  background-size: cover;
+  width: 40%;
+  margin: 10px;
 }
